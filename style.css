@@ -4,8 +4,8 @@ body {
 }
 
 main {
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 header {
@@ -13,7 +13,7 @@ header {
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background: #000000;
+    background: #090909;
     border-left: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
     border-right: 2px solid #ffffff;
@@ -21,20 +21,22 @@ header {
     place-items: center;
 }
 
+/* Style of the buttons */
+
 button {
     background: none;
     border: none;
     color: #ffffff;
     cursor: pointer;
     font-size: 27px;
-    font-family: "Sofia";
+    font-family: monospace;
 }
 
 
 /* Border of the buttons */
 
 .border {
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #090909;
     transition: border-bottom 700ms;
 }
 
@@ -51,9 +53,8 @@ button {
 }
 
 #games {
-    place-items: center;
     position: absolute;
-    display: block;
+    display: none; /* block */
     z-index: 1;
     background: #ffffff;
 }
@@ -61,4 +62,26 @@ button {
 .gamesButton {
     border: none;
     color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+
+
+/* Title style */
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+    font-style: italic;
+    font-size: 5em;
+}
+
+
+/* Content style */
+
+#content {
+    border: solid 2px white;
+    width: auto;
+    background-color: #090909;
 }
