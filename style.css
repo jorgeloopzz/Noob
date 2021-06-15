@@ -1,0 +1,64 @@
+body {
+    background: linear-gradient(to right, #000000 , #000000 ,#0044ff);
+    margin: 0;
+}
+
+main {
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+header {
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: #000000;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    padding: 8px;
+    place-items: center;
+}
+
+button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 27px;
+    font-family: "Sofia";
+}
+
+
+/* Border of the buttons */
+
+.border {
+    border-bottom: 2px solid #000000;
+    transition: border-bottom 700ms;
+}
+
+.border:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+
+/* Dropdown content */
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#games {
+    place-items: center;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    background: #ffffff;
+}
+
+.gamesButton {
+    border: none;
+    color: #000000;
+}
