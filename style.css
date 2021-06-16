@@ -150,8 +150,6 @@ i {
 
 a {
     text-decoration: none; /* To remove  the underline of the link*/
-    position: relative;
-    display: block;
 }
 
 /* Theme button style */
@@ -167,9 +165,47 @@ a {
 
 
 /* Hover tooltips */
-/* span {
+.tooltip {
+    position: relative;
+    display: block;
+}
+
+/* Tw, YT, Git tooltip */
+span {
+    visibility: hidden;
+    transition: visibility 1ms;
     position: absolute;
-    top: 100%;
-    right: 0px;
-    background-color: white;
-} */
+    left: 0%;
+    margin-left: -14px;
+    margin-top: 0.4em;
+    background-color: #090909;    
+    border-radius: 5%;
+    color: #ffffff;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+
+/* Insta tooltip */
+span#insta {
+    margin-left: -24px;
+}
+
+.tooltip:hover span {
+    visibility: visible;
+    animation-name: tooltipAppear;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tooltipAppear {
+    0% {
+        top: 60%;
+        opacity: 0%;
+    }
+
+    100% {
+        top: 100%;
+        opacity: 100%;
+    }
+}
