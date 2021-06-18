@@ -68,18 +68,76 @@ button {
 
 #games {
     position: absolute;
-    display: block; /* none */
+    display: none; /* none */
     z-index: 1;
     background: #ffffff;
-    border-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
 }
+
+.show {
+    display: block; /* To drop the games menu */
+}
+
+
+/* Style of games buttons */
 
 .gamesButton {
     border: none;
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 21px;
     padding: 6px;
+    transition: color 500ms;
+    display: inline;
+}
+
+
+/* Cold War button */
+#CWbutton::before {
+    content: url(imagenes,clips/CW.png);
+}
+
+#CWbutton:hover {
+    color: #d40000;
+}
+
+#CWbutton:active {
+    transition: color 1ms;
+    color: #ffffff;
+    text-shadow: -1px 0 #d40000, 0 1px #d40000, 1px 0 #d40000, 0 -1px #d40000;
+}
+
+
+/* Modern Warfare button */
+#MWbutton::before {
+    content: url(imagenes,clips/MW.png);
+}
+
+#MWbutton:hover {
+    color: #0051ff;
+}
+
+#MWbutton:active {
+    transition: color 1ms;
+    color: #ffffff;
+    text-shadow: -1px 0 #0051ff, 0 1px #0051ff, 1px 0 #0051ff, 0 -1px #0051ff;
+}
+
+
+/* BO4 button */
+#BO4button::before {
+    content: url(imagenes,clips/BO4.png);
+}
+
+#BO4button:hover {
+    color: #ff5e00;
+}
+
+#BO4button:active {
+    transition: color 1ms;
+    color: #ffffff;
+    text-shadow: -1px 0 #ff5e00, 0 1px #ff5e00, 1px 0 #ff5e00, 0 -1px #ff5e00;
 }
 
 
