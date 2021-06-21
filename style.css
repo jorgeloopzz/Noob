@@ -28,9 +28,9 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background: #090909;
-    border-left: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
     padding: 8px;
     place-items: center;
 }
@@ -157,9 +157,9 @@ h1 {
 
 #content {
     border: solid 2px transparent;
-    background-color: #090909;
+    background-color: transparent; /* I put here transparent since border is already transparent, you see the background-color */
     height: auto;
-    width: 0;
+    width: 100%;
     /* Underline effect */
     animation-name: boost;
     animation-duration: 2s;
