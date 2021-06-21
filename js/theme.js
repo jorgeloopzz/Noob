@@ -4,10 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Colors
     let defaultColor = "linear-gradient(to right, #000000 , #000000 ,#0044ff)"; // Color of the page
-    let lightBgColor = "linear-gradient(to right, rgb(229, 229, 229), #04f)"; 
+    let lightBgColor = "linear-gradient(to right, rgb(229, 229, 229), rgb(0, 68, 255), #04f)"; 
     let darkColor = "#000";
     let lightColor = "#ffffff";
-    let borders = "2px solid #000";
+    let borders = "3px solid #000";
+    let bordersLight = "3px solid #ffffff"
 
 
     const thmBtn = document.getElementById("changeThemeButton");
@@ -22,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         let header = document.getElementById('header');
         let buttons = document.querySelectorAll("button")
         let borderBtn = document.querySelectorAll("div.border");
-        let contentBorders = document.getElementById('content');
         
 
         // Change to light color 
@@ -35,6 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Border of the header
             header.style.border = borders; 
             header.style.borderTop = "none";
+
+            // Border of the content
+            /* document.getElementById('content').style.border = borders; */
 
 
             // Icons color
@@ -58,9 +61,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }) */
 
+        }   else {
+            bg.style.background = defaultColor;
+            h1.style.color = lightColor; // Color of the title
+            header.style.background = darkColor; // Background header
+
+            // Border of the header
+            header.style.border = bordersLight; 
+            header.style.borderTop = "none";
+
+            // Border of the content
+            /* document.getElementById('content').style.border = borders; */
 
 
+            // Icons color
+            for (let i = 0; i < icons.length; i++) {
+                icons[i].style.color = lightColor;
+            }
 
+            // Buttons color
+            for (let j = 0; j < buttons.length; j++) {
+                buttons[j].style.color = lightColor;
+            }
         }
     })
 
