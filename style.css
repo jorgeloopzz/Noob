@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, #000000 , #000000 ,#0044ff);
+    background-color: rgb(11, 11, 11);
     margin: 0;
     animation-name: appear;
     animation-duration: 5s;
@@ -7,7 +7,7 @@ body {
 
 
 /* Animation when the web is opened */
-@keyframes appear{
+/* @keyframes appear{
     from {
         opacity: 0;
     }
@@ -15,11 +15,18 @@ body {
     to {
         opacity: 100%;
     }
-}
+} */
 
 main {
     margin-left: 10%;
     margin-right: 10%;
+}
+
+#header {
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-right: 3px;
+    background: linear-gradient(to right, rgb(255, 0, 131) , rgb(0, 124, 255));
 }
 
 header {
@@ -27,10 +34,7 @@ header {
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background: #090909;
-    border-left: 3px solid #ffffff;
-    border-bottom: 3px solid #ffffff;
-    border-right: 3px solid #ffffff;
+    background: rgb(11, 11, 11);
     padding: 8px;
     place-items: center;
 }
@@ -40,7 +44,7 @@ header {
 button {
     background: none;
     border: none;
-    color: #ffffff;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 27px;
     font-family: monospace;
@@ -48,10 +52,9 @@ button {
 
 
 /* Border-bottom of the buttons */
-
 .border {
     border-bottom: 2px solid transparent;
-    transition: border-bottom 700ms;
+    transition: border-bottom 500ms;
 }
 
 .border:hover {
@@ -61,22 +64,23 @@ button {
 
 /* Dropdown content */
 
-#dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
 }
 
-#games {
+.games {
     position: absolute;
-    display: none; /* none */
+    display: none;
     z-index: 1;
-    background: #ffffff;
+    background: rgb(255, 255, 255);
     border-bottom-left-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
+    width: 100%; /* To make the dropdown width as wide as the dropdown button*/
 }
 
 .show {
-    display: block; /* To drop the games menu */
+    display: block; /* To drop the games menu using classList Toogle with JS*/
 }
 
 
@@ -84,12 +88,11 @@ button {
 
 .gamesButton {
     border: none;
-    color: #000000;
+    color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 21px;
     padding: 6px;
     transition: color 500ms;
-    display: inline;
 }
 
 
@@ -142,7 +145,6 @@ button {
 
 
 /* Title style */
-
 h1 {
     color: white;
     text-align: center;
@@ -154,12 +156,8 @@ h1 {
 
 
 /* Content style */
-
 #content {
-    border: solid 2px transparent;
-    background-color: transparent; /* I put here transparent since border is already transparent, you see the background-color */
-    height: auto;
-    width: 100%;
+    padding: 2px;
     /* Underline effect */
     animation-name: boost;
     animation-duration: 2s;
@@ -169,19 +167,18 @@ h1 {
 
 @keyframes boost {
     0% {
-        width: 0%;
-        border: solid 2px #ffffff;
+        background: linear-gradient(to right, rgb(255, 0, 131) , rgb(0, 124, 255));
+        transform: scaleX(0%);
     }
 
     100% {
-        width: 100%;
-        border: solid 2px white;
+        background: linear-gradient(to right, rgb(255, 0, 131) , rgb(0, 124, 255));
+        transform: scaleX(100%);
     }
 }
 
 
 /* Icons style */
-
 #icons {
     margin-top: 2em;
     display: inline-grid;
@@ -195,6 +192,7 @@ i {
     cursor: pointer;
     opacity: 0.3;
 }
+
 
 /* Style at hover */
 
@@ -222,7 +220,7 @@ i {
 .fa-youtube:hover {
     opacity: 1;
     color: #FF0000;
-        /* To make the background white */
+    /* To make the background white */
     background-image: url(imagenes,clips/white.jpg);
     background-size: 1em;
     background-repeat: no-repeat;
@@ -277,7 +275,6 @@ span {
     text-align: center;
 }
 
-
 /* Insta tooltip */
 span#insta {
     margin-left: -24px;
@@ -303,7 +300,6 @@ span#insta {
         opacity: 100%;
     }
 }
-
 
 
 /* Theme button tooltip */
