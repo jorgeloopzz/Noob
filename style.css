@@ -1,50 +1,45 @@
 body {
-    background-color: rgb(11, 11, 11);
+    background-color: rgb(37, 37, 40);
     margin: 0;
     animation-name: appear;
-    animation-duration: 5s;
+    animation-duration: 3s;
 }
 
-
 /* Animation when the web is opened */
-/* @keyframes appear{
+@keyframes appear{
     from {
         opacity: 0;
     }
 
     to {
-        opacity: 100%;
+        opacity: 1;
     }
-} */
+}
 
 main {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0 10%;
 }
 
 #header {
-    padding-left: 3px;
-    padding-bottom: 3px;
-    padding-right: 3px;
+    padding: 3px;
+    padding-top: 0;
     background: linear-gradient(to right, rgb(255, 0, 131) , rgb(0, 124, 255));
 }
 
 header {
-    width: auto;
-    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background: rgb(11, 11, 11);
+    background: rgb(37, 37, 40);
     padding: 8px;
     place-items: center;
 }
 
-/* Style of the buttons */
 
+/* Style of the buttons */
 button {
     background: none;
     border: none;
-    color: rgb(255, 255, 255);
+    color: rgb(242, 242, 242);
     cursor: pointer;
     font-size: 27px;
     font-family: monospace;
@@ -53,17 +48,18 @@ button {
 
 /* Border-bottom of the buttons */
 .border {
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 500ms;
+    height: 1px;
+    background-color: rgb(242, 242, 242);
+    opacity: 0;
+    transition: opacity 500ms;
 }
 
-.border:hover {
-    border-bottom: 2px solid #ffffff;
+button:hover .border {
+    opacity: 1;
 }
 
 
 /* Dropdown content */
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -85,7 +81,6 @@ button {
 
 
 /* Style of games buttons */
-
 .gamesButton {
     border: none;
     color: rgb(0, 0, 0);
@@ -151,6 +146,19 @@ h1 {
     font-family: "Audiowide", sans-serif;
     font-style: italic;
     font-size: 5em;
+    /* Title animation */
+    animation-name: titleSlide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes titleSlide {
+    from {
+        transform: translateY(-204px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 
@@ -161,7 +169,7 @@ h1 {
     /* Underline effect */
     animation-name: boost;
     animation-duration: 2s;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
@@ -231,8 +239,8 @@ i {
 /* Github icon */
 .fa-github:hover {
     opacity: 1;
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
+    /* background-color: #ffffff; */
     border-radius: 50%;
 }
 
@@ -264,11 +272,12 @@ a {
 span {
     visibility: hidden;
     transition: visibility 1ms;
+    opacity: 0;
+    transition: opacity 800ms;
     position: absolute;
-    left: 0%;
     margin-left: -14px;
-    margin-top: 0.4em;
-    background-color: #090909;    
+    top: 80%;
+    background: linear-gradient(to right, rgb(255, 0, 131) , rgb(0, 124, 255));    
     border-radius: 5%;
     color: #ffffff;
     padding: 5px 5px;
@@ -283,6 +292,7 @@ span#insta {
 
 /* Tooltips animation */
 .tooltip:hover span {
+    opacity: 1;
     visibility: visible;
     animation-name: tooltipAppear;
     animation-duration: 800ms;
@@ -291,43 +301,41 @@ span#insta {
 
 @keyframes tooltipAppear {
     from {
-        top: 60%;
-        opacity: 0%;
+        transform: translate(0, 0);
     }
 
     to {
-        top: 100%;
-        opacity: 100%;
+        transform: translate(0, 40%);
     }
 }
 
 
 /* Theme button tooltip */
-span#theme {
-    margin-left: 40px;
-    width: 200px;
-    top: -3px;
+.tooltipTheme {
+    position: relative;
+    display: inline;
+    border-radius: 50%;
 }
 
+span#theme {
+    left: 46px;
+    width: 280px;
+    top: 2px;
+}
 
 .tooltip:hover span#theme {
-    margin-left: 40px;
-    width: 200px;
-    top: -3px;
     animation-name: themeTooltipAppear;
     animation-duration: 800ms;
     animation-fill-mode: forwards;
 }
 
-/* Them button tooltip animation */
+/* Theme button tooltip animation */
 @keyframes themeTooltipAppear {
     from {
-        margin-left: 30px;
-        opacity: 0;
+        transform: translateX(0);
     }
 
     to {
-        margin-left: 40px;
-        opacity: 100%;
+        transform: translateX(20px);
     }
 }
