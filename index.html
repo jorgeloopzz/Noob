@@ -16,93 +16,89 @@
  
     <body>
 
-
         <main>
 
             <!-- Header -->
-            <div id="header">
+            <!-- Border of the header -->
+            <div id="header"> 
 
                 <header id="insideHeader">
 
-                    <div class="border">
+                    <button id="aboutMe" class="header-button">
     
-                        <button id="aboutMe" class="header-button">
+                        <strong>
+                            Sobre mi
+                        </strong>
+
+                        <!-- Border-bottom btn -->
+                        <div class="border"></div>
+                        
+                    </button>
     
+                    <button id="bestGames" class="header-button">
+    
+                        <strong>
+                            Partidas
+                        </strong>
+
+                        <!-- Border-bottom btn -->
+                        <div class="border"></div>
+                        
+                    </button>
+    
+                    <button id="clips" class="header-button">
+    
+                        <strong>
+                            Clips
+                        </strong>
+
+                        <!-- Border-bottom btn -->
+                        <div class="border"></div>
+                        
+                    </button>
+                    
+                    <div class="dropdown">
+    
+                        <button class="header-button stats" id="gamesButton">
+
                             <strong>
-                                Sobre mi
+                                Estadísticas
                             </strong>
+
+                            <!-- Border-bottom btn -->
+                            <div class="border"></div>
                             
                         </button>
-    
-                    </div>
-    
-                    <div class="border">
-    
-                        <button id="bestGames" class="header-button">
-    
-                            <strong>
-                                Partidas
-                            </strong>
-                            
-                        </button>
-    
-                    </div>
-    
-                    <div class="border">
-    
-                        <button id="clips" class="header-button">
-    
-                            <strong>
-                                Clips
-                            </strong>
-                            
-                        </button>
-    
-                    </div>
-    
-                    <div class="border">
-    
-                        <div class="dropdown">
-    
-                            <button class="header-button stats" id="gamesButton">
-    
+
+                        
+                        <div id="games" class="games">
+
+                            <button class="gamesButton" id="CWbutton">
+
                                 <strong>
-                                    Estadísticas
+                                    Cold War
                                 </strong>
                                 
                             </button>
+
     
-                            
-                            <div id="games" class="games">
-    
-                                <button class="gamesButton" id="CWbutton">
-    
-                                    <strong>
-                                        Cold War
-                                    </strong>
-                                    
-                                </button>
-    
+                            <button class="gamesButton" id="MWbutton">
+
+                                <strong>
+                                    Modern Warfare
+                                </strong>
+                                
+                            </button>
+
         
-                                <button class="gamesButton" id="MWbutton">
-    
-                                    <strong>
-                                        Modern Warfare
-                                    </strong>
-                                    
-                                </button>
-    
-            
-                                <button class="gamesButton" id="BO4button">
-    
-                                    <strong>
-                                        Black Ops 4
-                                    </strong>
-                                    
-                                </button>
-    
-                            </div>
-        
+                            <button class="gamesButton" id="BO4button">
+
+                                <strong>
+                                    Black Ops 4
+                                </strong>
+                                
+                            </button>
+
                         </div>
     
                     </div>
@@ -133,6 +129,7 @@
 
             <div id="icons">
 
+                <!-- Tooltips -->
                 <div class="tooltip">
 
                     <a href="https://www.instagram.com/jorgeloopzz/" target="_blank">
@@ -185,7 +182,7 @@
                 </diV>
                 
                 
-                <!-- CHange Theme button -->
+                <!-- Change Theme button -->
                 <div class="tooltip">
 
                     <button id="changeThemeButton">
@@ -202,10 +199,6 @@
 
         </main>
 
-
     </body>
 
-    
-
-    
 </html>
