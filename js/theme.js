@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let icons = document.querySelectorAll("i");
     let header = document.getElementById("insideHeader");
     let buttons = document.querySelectorAll(".header-button") 
-    var borderBtn = document.querySelectorAll(".border2");
+    var borderBtn = document.querySelectorAll(".border");
     const thmBtn = document.getElementById("changeThemeButton");
 
     thmBtn.addEventListener("click", () => {
