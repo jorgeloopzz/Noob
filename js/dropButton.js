@@ -1,4 +1,4 @@
-// // To drop the stats
+// // To drop the gemes
 
 document-addEventListener('DOMContentLoaded', () => {
 
