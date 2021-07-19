@@ -1,11 +1,10 @@
-// // To drop the gemes
-
-document-addEventListener('DOMContentLoaded', () => {
+// To drop the games menu
+document.addEventListener('DOMContentLoaded', () => {
 
     // Show drop-menu
     let dropBtn = document.getElementById('gamesButton');
 
-    dropBtn-addEventListener('click', () => {
+    dropBtn.addEventListener('click', () => {
         document.getElementById('gamesDrop').classList.toggle('show');
     })
 
