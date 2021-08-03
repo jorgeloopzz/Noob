@@ -1,0 +1,344 @@
+body {
+    background-color: rgb(37, 37, 40);
+    margin: 0;
+    animation-name: appear;
+    animation-duration: 3s;
+}
+
+/* Animation when the web is opened */
+@keyframes appear{
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+main {
+    margin: 0 10%;
+}
+
+#header {
+    padding: 3px;
+    padding-top: 0;
+    background: linear-gradient(135deg, rgb(255, 0, 131) , rgb(0, 124, 255))
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: rgb(37, 37, 40);
+    padding: 8px;
+    place-items: center;
+}
+
+
+/* Style of the buttons */
+button {
+    background: none;
+    border: none;
+    color: rgb(242, 242, 242);
+    cursor: pointer;
+    font-size: 27px;
+    font-family: monospace;
+}
+
+
+/* Border-bottom of the buttons */
+.border {
+    height: 1px;
+    background-color: rgb(242, 242, 242);
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+button:hover .border {
+    opacity: 1;
+}
+
+
+/* Dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.gamesDropdown {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background: rgb(255, 255, 255);
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    width: 100%; /* To make the dropdown width as wide as the dropdown button*/
+}
+
+.show {
+    display: block; /* To drop the games menu using classList Toogle with JS*/
+}
+
+
+/* Style of games buttons */
+.gamesButton {
+    border: none;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    padding: 6px;
+    transition: color 500ms;
+}
+
+
+/* Cold War button */
+#CWbutton::before {
+    content: url(imagenes,clips/CW.png);
+}
+
+#CWbutton:hover {
+    color: #d40000;
+}
+
+#CWbutton:active {
+    transition: color 1ms;
+    color: #ffffff;
+    text-shadow: -1px 0 #d40000, 0 1px #d40000, 1px 0 #d40000, 0 -1px #d40000;
+}
+
+
+/* Modern Warfare button */
+#MWbutton::before {
+    content: url(imagenes,clips/MW.png);
+}
+
+#MWbutton:hover {
+    color: #0051ff;
+}
+
+#MWbutton:active {
+    transition: color 1ms;
+    color: #ffffff;
+    text-shadow: -1px 0 #0051ff, 0 1px #0051ff, 1px 0 #0051ff, 0 -1px #0051ff;
+}
+
+
+/* BO4 button */
+#BO4button::before {
+    content: url(imagenes,clips/BO4.png);
+}
+
+#BO4button:hover {
+    color: #ff5e00;
+}
+
+#BO4button:active {
+    transition: color 1ms;
+    color: #ffffff;
+    text-shadow: -1px 0 #ff5e00, 0 1px #ff5e00, 1px 0 #ff5e00, 0 -1px #ff5e00;
+}
+
+
+/* Title style */
+h1 {
+    color: white;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+    font-style: italic;
+    font-size: 5em;
+    animation-name: titleSlide;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes titleSlide {
+    from {
+        transform: translateY(-204px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Content style */
+#content {
+    padding: 3px;
+    /* Underline effect */
+    animation-name: boost;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes boost {
+    0% {
+        background: linear-gradient(to right, rgb(255, 0, 131) , rgb(0, 124, 255));
+        transform: scaleX(0%);
+    }
+
+    100% {
+        background: linear-gradient(to right, rgb(255, 0, 131) , rgb(0, 124, 255));
+        transform: scaleX(100%);
+    }
+}
+
+#content2 {
+    background-color: rgb(37, 37, 40);
+    height: 50px;
+}
+
+/* Icons style */
+#icons {
+    margin-top: 2em;
+    display: inline-grid;
+    grid-template-columns: 3em 3em 3em 3em 3em;
+    place-items: center;
+}
+
+i {
+    color: #ffffff;
+    font-size: 2em;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+
+/* Style at hover */
+
+/* Instagram icon */
+.fa-instagram:hover {
+    opacity: 1;
+    border-radius: 50%;
+    background: 
+        linear-gradient(
+        #6559ca, 
+        #bc318f 30%, 
+        #e33f5f 50%, 
+        #f77638 70%, 
+        #fec66d 
+        100%);
+}
+
+/* Twitter icon */
+.fa-twitter:hover {
+    opacity: 1;
+    color: #1DA1F2;
+}
+
+/* YT icon */
+.fa-youtube:hover {
+    opacity: 1;
+    color: #FF0000;
+    /* To make the background white */
+    background-image: url(imagenes,clips/white.jpg);
+    background-size: 1em;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Github icon */
+.fa-github:hover {
+    opacity: 1;
+    color: #ffffff;
+    /* background-color: #ffffff; */
+    border-radius: 50%;
+}
+
+
+a {
+    text-decoration: none; /* To remove  the underline of the link*/
+}
+
+/* Theme button style */
+#changeThemeButton {
+    font-size: 1em;
+    border-radius: 50%;
+}
+
+.fa-adjust:hover {
+    opacity: 1;
+    color: #ffffff;
+}
+
+
+/* Hover tooltips */
+.tooltip {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+}
+
+/* Tw, YT, Git tooltip */
+span {
+    visibility: hidden;
+    transition: visibility 1ms;
+    opacity: 0;
+    transition: opacity 800ms;
+    position: absolute;
+    margin-left: -14px;
+    top: 80%;
+    background: linear-gradient(to right, rgb(255, 0, 131) , rgb(0, 124, 255));    
+    border-radius: 5%;
+    color: #ffffff;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+/* Insta tooltip */
+span#insta {
+    margin-left: -24px;
+}
+
+
+/* Tooltips animation */
+.tooltip:hover span {
+    opacity: 1;
+    visibility: visible;
+    animation-name: tooltipAppear;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes tooltipAppear {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(0, 40%);
+    }
+}
+
+
+/* Theme button tooltip */
+.tooltipTheme {
+    position: relative;
+    display: inline;
+    border-radius: 50%;
+}
+
+span#theme {
+    left: 46px;
+    width: 280px;
+    top: 2px;
+}
+
+.tooltip:hover span#theme {
+    animation-name: themeTooltipAppear;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+}
+
+/* Theme button tooltip animation */
+@keyframes themeTooltipAppear {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(20px);
+    }
+}
