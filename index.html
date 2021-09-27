@@ -12,6 +12,7 @@
     <!-- JS code -->
     <script src="js/theme.js"></script>
     <script src="js/dropButton.js"></script>
+    <script src="js/slide.js"></script>
 </head>
  
     <body>
@@ -24,7 +25,7 @@
                 
                 <header id="insideHeader">
 
-                    <button id="aboutMe" class="header-button">
+                    <button id="aboutMe" class="header-button" onclick="slideShows(1)">
     
                         <strong>
                             Sobre mi
@@ -35,7 +36,7 @@
                         
                     </button>
     
-                    <button id="bestGames" class="header-button">
+                    <button id="bestGames" class="header-button" onclick="slideShows(2)">
     
                         <strong>
                             Partidas
@@ -46,7 +47,7 @@
                         
                     </button>
     
-                    <button id="clips" class="header-button">
+                    <button id="clips" class="header-button" onclick="slideShows(3)">
     
                         <strong>
                             Clips
@@ -73,7 +74,7 @@
                         
                         <div id="gamesDrop" class="gamesDropdown">
     
-                            <button class="gamesButton" id="CWbutton">
+                            <button class="gamesButton" id="CWbutton" onclick="slideShows(4)"
     
                                 <strong>
                                     Cold War
@@ -82,7 +83,7 @@
                             </button>
     
     
-                            <button class="gamesButton" id="MWbutton">
+                            <button class="gamesButton" id="MWbutton" onclick="slideShows(5)">
     
                                 <strong>
                                     Modern Warfare
@@ -91,7 +92,7 @@
                             </button>
     
         
-                            <button class="gamesButton" id="BO4button">
+                            <button class="gamesButton" id="BO4button" onclick="slideShows(6)">
     
                                 <strong>
                                     Black Ops 4
@@ -117,8 +118,32 @@
             <!-- Content -->
 
             <div id="content">
-                <div id="content2">
 
+                <div class="content">
+                    Sobre mi
+                </div>
+
+                <div class="content">
+                    Matches
+                </div>
+
+
+                <div class="content">
+                    Clips
+                </div>
+
+
+                <div class="content">
+                    CW
+                </div>
+
+                <div class="content">
+                    MW
+                </div>
+
+
+                <div class="content">
+                    BO4
                 </div>
             </div>
 
