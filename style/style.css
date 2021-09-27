@@ -233,7 +233,7 @@ i {
 .fa-youtube:hover {
     opacity: 1;
     color: #FF0000;
-    background-image: url(imagenes,clips/white.jpg); /* To make the background white */
+    background-image: url(imagenes,clips/white.jpg); /*To make the background white*/
     background-size: 1em;
     background-repeat: no-repeat;
     background-position: center;
