@@ -174,6 +174,11 @@ h1 {
     animation-fill-mode: forwards;
 }
 
+.content {
+    background-color: rgb(37, 37, 40);
+    display: none;
+}
+
 @keyframes boost {
     0% {
         background: linear-gradient(to right, rgb(255, 0, 131) , rgb(0, 124, 255));
