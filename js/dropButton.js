@@ -1,11 +1,32 @@
 // To drop the games menu
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Show drop-menu
-    let dropBtn = document.getElementById('gamesButton');
+    const dropBtn = document.getElementById('gamesButton');
 
+    // Show drop-menu
     dropBtn.addEventListener('click', () => {
-        document.getElementById('gamesDrop').classList.toggle('show');
+
+        const games = document.getElementById('gamesDrop');
+
+        // Animation
+        let pos = -50;
+
+        // Stablish the margin and opacity menu values
+        games.style.top = "-50%"; // Start with a margin top at 50% and 0 opacity
+        games.style.opacity = 0;
+
+        let id = setInterval(animate, 1)
+        function animate() {
+            if (pos == 100) {
+                clearInterval(id)
+            } else {
+                pos++;
+                games.style.top = pos + "%";
+                games.style.opacity = pos + "%"
+            }
+        }
+
+        games.classList.toggle('show');
     })
 
     // Hide drop-menu
@@ -21,4 +42,5 @@ document.addEventListener('DOMContentLoaded', () => {
            }
        }
    }
+
 });
