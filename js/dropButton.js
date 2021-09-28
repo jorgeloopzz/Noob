@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         let pos = -50;
 
         // Stablish the margin and opacity menu values
-        games.style.top = "-50%"; // Start with a margin top at 50% and 0 opacity
-        games.style.opacity = 0;
+        gamesMenu.style.top = "-50%"; // Start with a margin top at 50% and 0 opacity
+        gamesMenu.style.opacity = 0;
 
         let id = setInterval(animate, 1)
         function animate() {
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        games.classList.toggle('show');
+        gamesMenu.classList.toggle('show');
     })
 
     // Hide drop-menu
