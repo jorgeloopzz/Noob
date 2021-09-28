@@ -153,6 +153,7 @@ h1 {
     animation-fill-mode: forwards;
 }
 
+/* Title animation */
 @keyframes titleSlide {
     from {
         transform: translateY(-204px);
@@ -191,11 +192,6 @@ h1 {
     }
 }
 
-#content2 {
-    background-color: rgb(37, 37, 40);
-    height: 50px;
-}
-
 /* Icons style */
 #icons {
     margin-top: 2em;
@@ -214,19 +210,6 @@ i {
 
 /* Style at hover */
 
-/* Instagram icon */
-.fa-instagram:hover {
-    opacity: 1;
-    border-radius: 50%;
-    background: 
-        linear-gradient(
-        #6559ca, 
-        #bc318f 30%, 
-        #e33f5f 50%, 
-        #f77638 70%, 
-        #fec66d 
-        100%);
-}
 
 /* Twitter icon */
 .fa-twitter:hover {
@@ -244,6 +227,11 @@ i {
     background-position: center;
 }
 
+/* Gitlab icon */
+.fa-gitlab:hover {
+    opacity: 1;
+    color: #fc6d27;
+}
 
 /* Github icon */
 .fa-github:hover {
@@ -277,7 +265,7 @@ a {
     border-radius: 50%;
 }
 
-/* Tw, YT, Git tooltip */
+/* Gitlab, Tw, YT, Git tooltip */
 span {
     visibility: hidden;
     transition: visibility 1ms;
@@ -292,12 +280,6 @@ span {
     padding: 5px 5px;
     text-align: center;
 }
-
-/* Insta tooltip */
-span#insta {
-    margin-left: -24px;
-}
-
 
 /* Tooltips animation */
 .tooltip:hover span {
@@ -318,33 +300,3 @@ span#insta {
     }
 }
 
-
-/* Theme button tooltip */
-.tooltipTheme {
-    position: relative;
-    display: inline;
-    border-radius: 50%;
-}
-
-span#theme {
-    left: 46px;
-    width: 280px;
-    top: 2px;
-}
-
-.tooltip:hover span#theme {
-    animation-name: themeTooltipAppear;
-    animation-duration: 800ms;
-    animation-fill-mode: forwards;
-}
-
-/* Theme button tooltip animation */
-@keyframes themeTooltipAppear {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(20px);
-    }
-}
