@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Show drop-menu
     dropBtn.addEventListener('click', () => {
 
-        const games = document.getElementById('gamesDrop');
+        const gamesMenu = document.getElementById('gamesDrop');
 
         // Animation
         let pos = -50;
@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 clearInterval(id)
             } else {
                 pos++;
-                games.style.top = pos + "%";
-                games.style.opacity = pos + "%"
+                gamesMenu.style.top = pos + "%";
+                gamesMenu.style.opacity = pos + "%"
             }
         }
 
