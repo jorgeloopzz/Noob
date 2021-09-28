@@ -1,3 +1,8 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
 body {
     background-color: rgb(37, 37, 40);
     margin: 0;
@@ -60,7 +65,6 @@ button:hover .border {
     opacity: 1;
 }
 
-
 /* Dropdown content */
 .dropdown {
     position: relative;
@@ -80,7 +84,6 @@ button:hover .border {
 .show {
     display: block; /* To drop the games menu using classList Toogle with JS*/
 }
-
 
 /* Style of games buttons */
 .gamesButton {
@@ -164,10 +167,9 @@ h1 {
 }
 
 
-
 /* Content style */
 #content {
-    padding: 3px;
+    padding: 2px;
     /* Underline effect */
     animation-name: boost;
     animation-duration: 2s;
@@ -176,8 +178,16 @@ h1 {
 }
 
 .content {
+    padding: 2px;
     background-color: rgb(37, 37, 40);
     display: none;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    text-align: center;
+    font-family: 'Merriweather', serif;
 }
 
 @keyframes boost {
@@ -209,7 +219,6 @@ i {
 
 
 /* Style at hover */
-
 
 /* Twitter icon */
 .fa-twitter:hover {
