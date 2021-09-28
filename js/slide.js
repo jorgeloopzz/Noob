@@ -7,7 +7,7 @@ function slideShows(n) {
         slides[i].style.display = "none";
     }
     
-    slides[n -1].style.display = "block";
+    slides[n -1].style.display = "grid";
 
     return slides
 };
