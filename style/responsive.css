@@ -1,0 +1,34 @@
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .header-button {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 620px) {
+    .header-button {
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 474px) {
+    .header-button {
+        font-size: 12px;
+    }
+
+    #icons {
+        margin-left: 4em;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .header-button {
+        font-size: 9px;
+    }
+}
