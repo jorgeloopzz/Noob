@@ -1,3 +1,24 @@
+/* Images size */
+@media only screen and (max-width: 1500px) {
+    img {
+        width: 200px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    img {
+        width: 150px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
 @media only screen and (max-width: 810px) {
     h1 {
         font-size: 2em;
@@ -40,8 +61,15 @@
         opacity: 1;
         color: #ffffff;
     }
-}
 
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .images {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 620px) {
     .header-button {
@@ -52,7 +80,6 @@
         font-size: 12px;
     }
 }
-
 
 @media only screen and (max-width: 474px) {
     .header-button {
@@ -67,7 +94,6 @@
         font-size: 9px;
     }
 }
-
 
 @media only screen and (max-width: 400px) {
     .header-button {
