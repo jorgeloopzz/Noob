@@ -185,6 +185,11 @@ h1 {
     color: rgb(255, 255, 255);
 }
 
+.images {
+    display: grid;
+    place-items: center;
+}
+
 p {
     text-align: center;
     font-family: 'Merriweather', serif;
