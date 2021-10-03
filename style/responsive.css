@@ -1,4 +1,4 @@
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 810px) {
     h1 {
         font-size: 2em;
     }
@@ -6,12 +6,50 @@
     .header-button {
         font-size: 20px;
     }
+
+    .gamesButton {
+        font-size: 15px;
+    }
+
+    #CWbutton::before, #MWbutton::before, #BO4button::before {
+        content: none;
+    }
+
+    .fa-twitter {
+        opacity: 1;
+        color: #1DA1F2;
+    }
+
+    .fa-youtube {
+        opacity: 1;
+        color: #FF0000;
+    }
+
+    .fa-gitlab {
+        opacity: 1;
+        color: #fc6d27;
+    }
+
+    .fa-github {
+        opacity: 1;
+        color: #ffffff;
+        border-radius: 50%;
+    }
+
+    .fa-adjust {
+        opacity: 1;
+        color: #ffffff;
+    }
 }
 
 
 @media only screen and (max-width: 620px) {
     .header-button {
         font-size: 15px;
+    }
+
+    .gamesButton {
+        font-size: 12px;
     }
 }
 
@@ -22,7 +60,11 @@
     }
 
     #icons {
-        margin-left: 4em;
+        margin-left: 3em;
+    }
+
+    .gamesButton {
+        font-size: 9px;
     }
 }
 
@@ -30,5 +72,13 @@
 @media only screen and (max-width: 400px) {
     .header-button {
         font-size: 9px;
+    }
+
+    #icons {
+        margin-left: 2em;
+    }
+
+    .gamesButton {
+        font-size: 8px;
     }
 }
