@@ -282,16 +282,18 @@ a {
 span {
     visibility: hidden;
     transition: visibility 1ms;
-    opacity: 0;
+    opacity: 0;  /*For the animation*/
     transition: opacity 800ms;
     position: absolute;
-    margin-left: -14px;
-    top: 80%;
     background: linear-gradient(to right, rgb(255, 0, 131) , rgb(0, 124, 255));    
     border-radius: 5%;
     color: #ffffff;
     padding: 5px 5px;
     text-align: center;
+    /*To center the tooltips in every browser*/
+    top: 50%;
+    left: -32%;
+    transform: translate(-50%, -50%)
 }
 
 /* Tooltips animation */
@@ -309,6 +311,6 @@ span {
     }
 
     to {
-        transform: translate(0, 40%);
+        transform: translate(0, 70%);
     }
 }
