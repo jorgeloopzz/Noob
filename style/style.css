@@ -178,22 +178,26 @@ h1 {
 }
 
 .content {
+    height: auto;
+    width: auto;
     padding: 2px;
     background-color: rgb(37, 37, 40);
     display: none;
     grid-template-columns: 0.5fr 1fr 0.5fr;
     color: rgb(255, 255, 255);
-}
-
-.images {
-    display: grid;
     place-items: center;
 }
 
+/* About me content style */
 p {
     text-align: center;
     font-family: 'Merriweather', serif;
 }
+
+.images {
+    display: grid;
+}
+
 
 @keyframes boost {
     0% {
@@ -208,6 +212,8 @@ p {
 }
 
 /* Icons style */
+
+/* Icons div */
 #icons {
     margin-top: 2em;
     display: inline-grid;
@@ -216,24 +222,24 @@ p {
 }
 
 i {
-    color: #ffffff;
+    /* color: #ffffff; */
     font-size: 2em;
     cursor: pointer;
     opacity: 0.3;
 }
 
-
-/* Style at hover */
+/* Gitlab icon */
+.fa-gitlab {
+    color: #fc6d27;
+}
 
 /* Twitter icon */
-.fa-twitter:hover {
-    opacity: 1;
+.fa-twitter {
     color: #1DA1F2;
 }
 
 /* YT icon */
-.fa-youtube:hover {
-    opacity: 1;
+.fa-youtube {
     color: #FF0000;
     background-image: url(imagenes,clips/white.jpg); /*To make the background white*/
     background-size: 1em;
@@ -241,22 +247,10 @@ i {
     background-position: center;
 }
 
-/* Gitlab icon */
-.fa-gitlab:hover {
-    opacity: 1;
-    color: #fc6d27;
-}
-
 /* Github icon */
-.fa-github:hover {
-    opacity: 1;
+.fa-github {
     color: #ffffff;
     border-radius: 50%;
-}
-
-
-a {
-    text-decoration: none; /* To remove  the underline of the link*/
 }
 
 /* Theme button style */
@@ -265,9 +259,19 @@ a {
     border-radius: 50%;
 }
 
-.fa-adjust:hover {
-    opacity: 1;
+.fa-adjust {
+    /* opacity: 1; */
     color: #ffffff;
+}
+
+/* Style at hover */
+
+.fa-twitter:hover, .fa-youtube:hover, .fa-gitlab:hover, .fa-github:hover, .fa-adjust:hover {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none; /* To remove  the underline of the link*/
 }
 
 
