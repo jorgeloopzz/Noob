@@ -255,23 +255,24 @@ i {
 }
 
 
-/* Style at hover */
-
-.fa-reddit:hover, .fa-youtube:hover, .fa-gitlab:hover, .fa-github:hover, .fa-adjust:hover, .tooltip:hover span {
-    opacity: 1;
-}
-
-
 /* Tooltips */
 
 /* Gitlab, Tw, YT, Git tooltip */
 span {
     opacity: 0;
-    transform: translate(-25%, 10%); /*Center the tooltip*/
+    -webkit-transform: translate(-80%, 130%); /* Center tooltips in Chromium based browsers*/
+    -moz-transform: translate(-25%, 10%); /* Center tooltips in Firefox based browsers*/
+    transform: translate(-25%, 10%);  /* Center tooltips*/
     transition: opacity 800ms;
     position: absolute;
     background: linear-gradient(to right, rgb(255, 0, 131) , rgb(0, 124, 255));    
     border-radius: 5%;
     color: #ffffff;
     padding: 4px 4px;
+}
+
+/* Style at hover */
+
+.fa-reddit:hover, .fa-youtube:hover, .fa-gitlab:hover, .fa-github:hover, .fa-adjust:hover, .tooltip:hover span {
+    opacity: 1;
 }
