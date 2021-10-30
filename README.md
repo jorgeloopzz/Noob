@@ -11,8 +11,8 @@
 ![webpage](https://user-images.githubusercontent.com/80071604/139555571-6aeffcc5-7715-43af-96ba-6847d95fa8c3.png)
 * Welcome to my first website! In this project I tried to mix my personal profile with my Call Of Duty journey, talking about when I started to 
 code, some feautures about me and of course, some stats in CoD :). 
-  * If you wanna check out this project just `git clone https://github.com/Jorgedeveloopzz/MiPrimeraPagina.git` or donwload the ZIP and then open it in your browser. 
-(Firefox based web browsers preferibly).
+  * If you wanna check out this project just `git clone https://github.com/Jorgedeveloopzz/MiPrimeraPagina.git` 
+or donwload the ZIP and then open it in your browser. (Firefox based web browsers preferibly).
 
 ## Objectives
 * The main reason why I started this project was to learn Frontend development, especially to learn Javascript but to be honest, I learnt very little. In fact,
