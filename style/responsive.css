@@ -7,6 +7,10 @@
     p {
         font-size: 15px;
     }
+
+    video {
+        height: 300px;
+    }
 }
 
 @media only screen and (max-width: 1060px) {
@@ -68,6 +72,10 @@
 
     .images {
         display: none;
+    }
+
+    video {
+        height: 150px;
     }
 }
 
