@@ -35,7 +35,7 @@ main {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     background: rgb(37, 37, 40);
     padding: 8px;
     place-items: center;
@@ -170,6 +170,7 @@ h1 {
 /* Content style */
 #content {
     padding: 2px;
+    place-items: center;
     /* Underline effect */
     animation-name: boost;
     animation-duration: 2s;
@@ -196,6 +197,10 @@ p {
 
 .images {
     display: grid;
+}
+
+#video {
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 
