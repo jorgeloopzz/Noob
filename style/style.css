@@ -199,6 +199,8 @@ p {
     display: grid;
 }
 
+
+/* Clip */
 #video {
     grid-template-columns: 1fr 1fr 1fr;
 }
