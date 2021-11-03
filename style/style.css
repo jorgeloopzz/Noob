@@ -225,19 +225,20 @@ p {
 #icons {
     margin-top: 2em;
     display: inline-grid;
-    grid-template-columns: 3em 3em 3em 3em 3em;
+    grid-template-columns: 3em 3em 3em 3em;
     place-items: center;
 }
 
 i {
-    /* color: #ffffff; */
     font-size: 2em;
     cursor: pointer;
     opacity: 0.3;
 }
 
 /* Gitlab and Reddit icon */
-.fa-gitlab, .fa-reddit {
+.fa-reddit {
+    background-color: #ffffff;
+    border-radius: 50%; /* To adjust the background */
     color: #ff4500;
 }
 
@@ -282,7 +283,7 @@ span {
 
 /* Style at hover */
 
-.fa-reddit:hover, .fa-youtube:hover, .fa-gitlab:hover, .fa-github:hover, .fa-adjust:hover , .tooltip:hover span {
+.fa-reddit:hover, .fa-youtube:hover, .fa-github:hover, .fa-adjust:hover , .tooltip:hover span {
     visibility: visible;
     opacity: 1;
 }
