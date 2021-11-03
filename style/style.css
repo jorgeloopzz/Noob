@@ -267,6 +267,7 @@ i {
 
 /* Gitlab, Tw, YT, Git tooltip */
 span {
+    visibility: hidden;
     opacity: 0;
     -webkit-transform: translate(-80%, 130%); /* Center tooltips in Chromium based browsers*/
     -moz-transform: translate(-25%, 10%); /* Center tooltips in Firefox based browsers*/
@@ -281,6 +282,7 @@ span {
 
 /* Style at hover */
 
-.fa-reddit:hover, .fa-youtube:hover, .fa-gitlab:hover, .fa-github:hover, .fa-adjust:hover, .tooltip:hover span {
+.fa-reddit:hover, .fa-youtube:hover, .fa-gitlab:hover, .fa-github:hover, .fa-adjust:hover , .tooltip:hover span {
+    visibility: visible;
     opacity: 1;
 }
