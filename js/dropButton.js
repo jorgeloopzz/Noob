@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 gamesMenu.style.opacity = pos + "%"
             }
         }
-
         gamesMenu.classList.toggle('show');
     })
 
