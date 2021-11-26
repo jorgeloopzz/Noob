@@ -1,45 +1,42 @@
 // To drop the games menu
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+  const dropBtn = document.getElementById("gamesButton");
 
-    const dropBtn = document.getElementById('gamesButton');
+  // Show drop-menu
+  dropBtn.addEventListener("click", () => {
+    const gamesMenu = document.getElementById("gamesDrop");
 
-    // Show drop-menu
-    dropBtn.addEventListener('click', () => {
+    // Animation
+    let pos = -50;
 
-        const gamesMenu = document.getElementById('gamesDrop');
+    // Stablish the margin and opacity menu values
+    gamesMenu.style.top = "-50%"; // Start with a margin top at 50% and 0 opacity
+    gamesMenu.style.opacity = 0;
 
-        // Animation
-        let pos = -50;
+    let id = setInterval(animate, 1);
+    function animate() {
+      if (pos == 100) {
+        clearInterval(id);
+      } else {
+        pos++;
+        gamesMenu.style.top = `${pos}%`;
+        gamesMenu.style.opacity = `${pos}%`;
+      }
+    }
+    gamesMenu.classList.toggle("show");
+  });
 
-        // Stablish the margin and opacity menu values
-        gamesMenu.style.top = "-50%"; // Start with a margin top at 50% and 0 opacity
-        gamesMenu.style.opacity = 0;
-
-        let id = setInterval(animate, 1)
-        function animate() {
-            if (pos == 100) {
-                clearInterval(id)
-            } else {
-                pos++;
-                gamesMenu.style.top = pos + "%";
-                gamesMenu.style.opacity = pos + "%"
-            }
+  // Hide drop-menu
+  window.onclick = function (event) {
+    if (!event.target.matches(".stats")) {
+      var dropdowns = document.getElementsByClassName("gamesDropdown");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains("show")) {
+          openDropdown.classList.remove("show");
         }
-        gamesMenu.classList.toggle('show');
-    })
-
-    // Hide drop-menu
-    window.onclick = function(event) {
-        if (!event.target.matches('.stats')) {
-            var dropdowns = document.getElementsByClassName('gamesDropdown');
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                   openDropdown.classList.remove('show')
-               }
-           }
-       }
-   }
-
+      }
+    }
+  };
 });
