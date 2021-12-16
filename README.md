@@ -17,9 +17,3 @@ or donwload the ZIP and then open it in your browser. (Firefox based web browser
 ## Objectives
 * The main reason why I started this project was to learn Frontend development, especially to learn Javascript but to be honest, I learnt very little. In fact,
 JS only represents 23,1% of the final code, althought it's been enough to learn the basics of the lenguage. On the other hand, I've learned too much of CSS and HTML.
-
-## Why is it unfinished?
-* For the future I want to learn backend, and this would be good beggining to start in the part of the "stats" to add date bases and make consults. I have some ideas to that.
-
-## Next project in mind
-* Now I'm going to make typical project to learn JS, a task list, which I expect to get better in Frontend development and learn more Javascript.
