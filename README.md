@@ -4,8 +4,6 @@
 
 * [Introduction](#introduction)
 * [Objectives](#objectives)
-* [Why is it unfinished?](#why-is-it-unfinished)
-* [Next project in mind](#next-project-in-mind)
 
 ## Introduction
 ![screen](https://user-images.githubusercontent.com/80071604/139609521-d4b0b8ad-06b2-4a07-8f4b-e345b1371cd2.png)
