@@ -1,123 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Icons -->
-    <script src="https://kit.fontawesome.com/cd7a3a8748.js" crossorigin="anonymous"></script>
-    <title>Mi primera página</title>
-    <!-- CSS code -->
-    <link rel = "stylesheet" href = "style/style.css"> 
-    <link rel = "stylesheet" href = "style/responsive.css" />
-    <!-- JS code -->
-    <script src="js/theme.js"></script>
-    <script src="js/dropButton.js"></script>
-    <script src="js/slide.js"></script>
-    <script src="js/months.js"></script>
-</head>
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Icons -->
+	<script src="https://kit.fontawesome.com/cd7a3a8748.js" crossorigin="anonymous"></script>
+	<title>Mi primera página</title>
+	<!-- CSS code -->
+	<link rel = "stylesheet" href = "style/style.css"> 
+	<link rel = "stylesheet" href = "style/responsive.css" />
+	<!-- JS code -->
+	<script src="js/theme.js"></script>
+	<script src="js/dropButton.js"></script>
+	<script src="js/slide.js"></script>
+	<script src="js/months.js"></script>
+    </head>
  
     <body>
-
         <main>
-
             <!-- Header -->
-            
             <div id="header"> <!-- Border of the header -->
-                
                 <header id="insideHeader">
-
                     <button id="aboutMe" class="header-button" onclick="slideShows(1)">
-    
                         <strong>
                             Sobre mi
                         </strong>
-    
                         <!-- Border-bottom btn -->
                         <div class="border"></div>
-                        
                     </button>
-    
+
                     <button id="clips" class="header-button" onclick="slideShows(2)">
-    
                         <strong>
                             Clips
                         </strong>
-    
                         <!-- Border-bottom btn -->
                         <div class="border"></div>
-                        
                     </button>
                     
                     <div class="dropdown">
-    
                         <button class="header-button" id="gamesButton">
-    
                             <strong class="stats">
                                 Estadísticas
                             </strong>
-    
                             <!-- Border-bottom btn -->
                             <div class="border"></div>
-                            
                         </button>
-    
                         
                         <div id="gamesDrop" class="gamesDropdown">
-    
                             <button class="gamesButton" id="CWbutton" onclick="slideShows(3)"
-    
                                 <strong>
                                     Cold War
                                 </strong>
-                                
                             </button>
     
-    
                             <button class="gamesButton" id="MWbutton" onclick="slideShows(4)">
-    
                                 <strong>
                                     Modern Warfare
                                 </strong>
-                                
                             </button>
-    
         
                             <button class="gamesButton" id="BO4button" onclick="slideShows(5)">
-    
                                 <strong>
                                     Black Ops 4
                                 </strong>
-                                
                             </button>
-    
                         </div>
-    
                     </div>
-    
                 </header>
             </div>
 
-
             <!-- Title -->
-            
             <h1>
                 KingWhiteSkin
             </h1>
 
-
             <!-- Content -->
-
             <div id="content">
-
                 <div class="content">
-
                     <div class="images">
                         <img src="style/imagenes,clips/leftPicture.jpg" width="300px">
                         <img src="style/imagenes,clips/bottom-left-picture.jpg" width="300px">
                     </div>
-                    
                     <p>
                         Hola, soy un chaval de 18 años que empezó su aventura en la programación hace ya cosa de <b id="months"></b> meses. <br>
                         Por aquel entonces empezé con Python haciendo los programas en el intérprete junto con la documentación para ver que podía aprender. 
@@ -130,14 +94,11 @@
                         Esta página va sobre mi en el Call Of Duty, en la que enseño mis estadísticas, un par de partidas que me he sacado en distintos CoD 
                         y esta hecha con HTML, CSS y JS, así que para acabar espero que os guste. <3
                     </p>
-
                     <div class="images">
                         <img src="style/imagenes,clips/rightPicture.jpg" width="300px">
                         <img src="style/imagenes,clips/bottom-right-picture.jpg" width="300px">
                     </div>
-
                 </div>
-
 
                 <div class="content">
                     <div></div>  <!-- To center the video -->
@@ -149,7 +110,6 @@
                     <div></div>  <!-- To center the video -->
                 </div>
 
-
                 <div class="content">
                     CW
                 </div>
@@ -158,42 +118,28 @@
                     MW
                 </div>
 
-
                 <div class="content">
                     BO4
                 </div>
             </div>
 
-
-
             <!-- Icons -->
-
             <div id="icons">
-
                 <!-- Tooltips  and icons -->
-
-                
                 <diV class="tooltip">
-
                     <a href="https://github.com/Jorgedeveloopzz" target="_blank">
                         <i class="fab fa-github color"></i>
                     </a> 
-                    
                     <span>
                         Github
                     </span>
-                    
                 </diV>
                 
                 <!-- Change Theme button -->
                 <button id="changeThemeButton">
                     <i class="fas fa-adjust color"></i>
                 </button>
-                
             </div>
-            
         </main>
-        
     </body>
-    
 </html>
