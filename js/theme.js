@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Elements that change
   let bg = document.body;
   let h1 = document.querySelector("h1");
-  let icons = document.querySelectorAll(".color"); // The github and theme button icons
+  let icons = document.querySelectorAll("i"); // The github and theme button icons
   let buttons = document.querySelectorAll(".header-button");
   let borderBtn = document.querySelectorAll(".border");
   let header = document.getElementById("insideHeader");
